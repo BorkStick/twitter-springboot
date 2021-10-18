@@ -13,16 +13,20 @@
     <!-- User profile page begins -->
     <div th:if="${!isSelfPage}">
       <form th:action="@{/follow/} + ${user.username}" th:if="${!following}" method="post">
-        <button style="float:right" type="Submit" class="btn btn-lg btn-success">Follow</button>
+        <button style="float:right" type="Submit" class="btn btn-lg btn-dark">Follow</button>
       </form>
       <form th:action="@{/unfollow/} + ${user.username}" th:if="${following}" method="post">
-        <button style="float:right" type="Submit" class="btn btn-lg btn-primary unfollow_btn">Following</button>
+        <button style="float:right" type="Submit" class="btn btn-lg btn-secondary unfollow_btn">Following</button>
       </form>
     </div>
 
     <div>
-      <h3 style="color: #00aced">@<span th:text="${user.username}"></span></h3>
-      <h4 th:text="${user.firstName} + ' ' + ${user.lastName}"></h4>
+      <img src="/images/user_icon.png"
+           height="150"
+           width="150">
+      <h3 th:text="${user.firstName} + ' ' + ${user.lastName}"></h3>
+      <h5 style="color: #ff5555">@<span th:text="${user.username}"></span></h5>
+
     </div>
 
     <h6>Joined <span th:text="${#dates.format(user.createdAt, 'MMMM dd, yyyy')}"></span></h6>
@@ -48,6 +52,8 @@
     <h3>No Recent Meeps</h3>
   </div>
 </main>
+
+<footer th:replace="fragments::footer"></footer>
 
 </body>
 </html>

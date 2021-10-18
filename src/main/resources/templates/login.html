@@ -12,12 +12,13 @@
     <input type="text" id="username" name="username" th:placeholder="Username" class="form-control"/> <br/>
     <input type="password" th:placeholder="Password" id="password" name="password" class="form-control"/> <br/>
     <section align="center" th:if="${param.error}">
-      <h4 style="color: red">Login unsuccessful.</h4>
+      <h4 style="color: red">Access Denied</h4>
     </section>
-    <button class="btn btn-md btn-success btn-block" name="Submit" value="Login" type="Submit">Log in</button>
-    <a class="btn btn-md btn-success btn-block" name="SignUp" href="/signup">Sign Up</a>
+    <button class="btn btn-md btn-secondary btn-block btn-lg" name="Submit" value="Login" type="Submit">Log in</button>
+    <a class="btn btn-md btn-outline-dark btn-block" name="SignUp" href="/signup">Sign Up</a>
   </form>
 </main>
 
+<footer th:replace="fragments::footer"></footer>
 </body>
 </html>

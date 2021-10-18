@@ -13,22 +13,6 @@
     <a class="nav-link" href="/meeps?filter=following">Following</a></li>
 </ul>
 
-<!--<ul class="nav nav-tabs">-->
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link active" aria-current="page" href="#">Active</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link" href="#">Link</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link" href="#">Link</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-<!--    </li>-->
-<!--</ul>-->
-
-
 <main class="container mt-4">
   <h2>Meeps</h2>
   <div class="list-group" th:each="tweet:${tweetList}">
@@ -41,14 +25,16 @@
              height="50">
       </div>
       <div class="col">
-        <div class="row d-flex justify-content-start">
-          <div class="col-2">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 style="margin:inherit;">@<span th:text="${tweet.user.username}"></span></h5>
-            </div>
+        <div class="row d-flex ">
+          <div class="col-auto" >
+              <a th:href="@{/users/} + ${tweet.user.username}" class="d-flex w-100" style="color: #000">
+                <h5 style="margin:inherit;"><b><span th:text="${tweet.user.firstName}"></span></b></h5>
+                <h5 style="margin:inherit;" class="text-muted mx-1">@<span th:text="${tweet.user.username}"></span></h5>
+              </a>
+
           </div>
-          <div class="col-4">
-            <small th:text="${tweet.date}"></small>
+          <div class="col-2">
+            <small th:text="${tweet.date}" class="text-muted"></small>
           </div>
         </div>
 
@@ -67,5 +53,7 @@
     <h3>No meeps have been created by your followers</h3>
   </div>
 </main>
+<footer th:replace="fragments::footer"></footer>
+
 </body>
 </html>

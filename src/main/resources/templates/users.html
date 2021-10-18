@@ -47,7 +47,7 @@
                     <form  th:action="@{/unfollow/} + ${user.username}" th:if="${followingStatus.containsKey(user.username)
 				&& followingStatus.get(user.username)}" method="post">
 
-                        <button  type="Submit" class="btn btn-md btn-primary unfollow_btn">Following</button>
+                        <button  type="Submit" class="btn btn-md btn-secondary unfollow_btn">Following</button>
                     </form>
 
                 </div>
@@ -62,5 +62,7 @@
     <div th:if="${#lists.isEmpty(users) and filter == 'following'}"><center><h3>You're not following anyone</h3></center></div>
 
 </main>
+<footer th:replace="fragments::footer"></footer>
+
 </body>
 </html>
