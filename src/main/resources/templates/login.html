@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments::head">
+  <meta charset="UTF-8">
+  <title>Meeper</title>
+</head>
+<body>
+<nav th:replace="fragments::navbar"></nav>
+<main class="container mt-4">
+  <h2>Welcome!</h2>
+  <form th:action="@{/login}" method="post"><br/>
+    <input type="text" id="username" name="username" th:placeholder="Username" class="form-control"/> <br/>
+    <input type="password" th:placeholder="Password" id="password" name="password" class="form-control"/> <br/>
+    <section align="center" th:if="${param.error}">
+      <h4 style="color: red">Login unsuccessful.</h4>
+    </section>
+    <button class="btn btn-md btn-success btn-block" name="Submit" value="Login" type="Submit">Log in</button>
+    <a class="btn btn-md btn-success btn-block" name="SignUp" href="/signup">Sign Up</a>
+  </form>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+2021-10-17 17:21:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "MERGE INTO `user` VALUES ( 3, 1, CURRENT_TIME, 'chef@email.com'',
+'Swedish',
+'Chef',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'chef');
+
+MERGE INTO `user` VALUES (
+4,
+1,
+CURRENT_TIME,
+'honeydew@email.com',
+'Bunsen',
+'Honeydew',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'honeydew[*]');
+
+
+MERGE INTO `user_role` VALUES (
+1,
+1
+)"; SQL statement:
+MERGE INTO `user` VALUES ( 3, 1, CURRENT_TIME, 'chef@email.com'',
+'Swedish',
+'Chef',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'chef');
+
+MERGE INTO `user` VALUES (
+4,
+1,
+CURRENT_TIME,
+'honeydew@email.com',
+'Bunsen',
+'Honeydew',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'honeydew');
+
+
+MERGE INTO `user_role` VALUES (
+1,
+1
+) [42000-200]
+2021-10-17 17:22:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "MERGE INTO `user` VALUES ( 3, 1, CURRENT_TIME, 'chef@email.com'',
+'Swedish',
+'Chef',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'chef');
+
+MERGE INTO `user` VALUES (
+4,
+1,
+CURRENT_TIME,
+'honeydew@email.com',
+'Bunsen',
+'Honeydew',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'honeydew[*]');
+
+
+MERGE INTO `user_role` VALUES (
+1,
+1
+)"; SQL statement:
+MERGE INTO `user` VALUES ( 3, 1, CURRENT_TIME, 'chef@email.com'',
+'Swedish',
+'Chef',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'chef');
+
+MERGE INTO `user` VALUES (
+4,
+1,
+CURRENT_TIME,
+'honeydew@email.com',
+'Bunsen',
+'Honeydew',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'honeydew');
+
+
+MERGE INTO `user_role` VALUES (
+1,
+1
+) [42000-200]
+2021-10-17 17:23:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "MERGE INTO `user` VALUES ( 3, 1, CURRENT_TIME, 'chef@email.com'',
+'Swedish',
+'Chef',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'chef');
+
+MERGE INTO `user` VALUES (
+4,
+1,
+CURRENT_TIME,
+'honeydew@email.com',
+'Bunsen',
+'Honeydew',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'honeydew[*]');
+
+
+MERGE INTO `user_role` VALUES (
+1,
+1
+)"; SQL statement:
+MERGE INTO `user` VALUES ( 3, 1, CURRENT_TIME, 'chef@email.com'',
+'Swedish',
+'Chef',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'chef');
+
+MERGE INTO `user` VALUES (
+4,
+1,
+CURRENT_TIME,
+'honeydew@email.com',
+'Bunsen',
+'Honeydew',
+'$2a$12$oMfQx55MFj0C9eX5wST3CeqYHXf7wJHE0aUjsac3g0GN6GhVTI/GC',
+'honeydew');
+
+
+MERGE INTO `user_role` VALUES (
+1,
+1
+) [42000-200]
