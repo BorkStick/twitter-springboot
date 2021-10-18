@@ -22,8 +22,13 @@
 
         <a th:href="@{/users/} + ${user.username}" class="list-group-item list-group-item-action mt-2 shadow-sm">
             <div class="row" style="align-items:center">
+                <div class="col-1">
+                    <img src="/images/user_icon.png"
+                         height="50"
+                         width="50">
+                </div>
                 <div class="col col-sm-6">
-                    <h5 class="mb-1 username"><i class="fab fa-twitter"></i> @<span th:text="${user.username}"></span></h5>
+                    <h5 class="mb-1 username">@<span th:text="${user.username}"></span></h5>
                     <h5 class="mb-1"><span th:text="${user.firstName}"></span> <span th:text="${user.lastName}"></span> <span th:if="${!followingStatus.containsKey(user.username)}">(Me)</span></h5></h5>
                 </div>
 
