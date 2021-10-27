@@ -1,4 +1,6 @@
 # twitter-springboot
+![screenshot](/screenshots/screenshotv1.png)
+
 Twitter clone using springboot, h2, thymeleaf.
 
 [Live Demo](https://meeper.tylor.tech/)
